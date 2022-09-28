@@ -1,0 +1,247 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+/* CSS */
+:root {
+    --primary: #16213E;
+    --secondary: #0F3460;
+    --accent: #E94560;
+    --white: #FFFFFF;
+    --purple: #533483;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+div {
+    display: flex;
+}
+
+/* Flex */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Spacing */
+.px-1 {
+    padding: 0 1rem;
+}
+
+.pe-0 {
+    padding-right: 0.5rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.pt-0 {
+    padding: 0.5rem 0 0 0;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+/* Typography */
+.fs-1 {
+    font-size: 2rem;
+    
+}
+
+.fs-2 {
+    font-size: 1.5rem;
+}
+
+.fs-3 {
+    font-size: 0.75rem;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Color */
+.accent {
+    color: var(--accent);
+}
+
+/* Navbar */
+header {
+    background-color: var(--secondary);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 768px;
+}
+
+#nav-menu.active {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#nav-menu.active span {
+    padding: 1rem 0;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    #nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        max-width: 576px;
+    }
+}
+
+#name {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+#name:hover {
+    color: var(--purple);
+}
+
+/* My Tickets */
+.event-wrapper {
+    overflow: clip;
+    overflow-clip-margin: 2rem;
+}
+
+.event-img {
+    width: 270px;
+    height: 135px;
+    object-fit: cover;
+    object-position: 25% 75%;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 0.5rem;
+}
+
+.event:hover > .event-img {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.event {
+    position: relative;
+    padding-right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .event-desc {
+        position: absolute;
+        bottom: 1.5rem;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .event:hover > .event-desc {
+        opacity: 1;
+    }
+
+    .event:hover > .event-img {
+        filter: brightness(0.5);
+    }
+}
