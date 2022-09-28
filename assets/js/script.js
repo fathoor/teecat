@@ -28,13 +28,13 @@ const eventLists = document.querySelectorAll('.event-list');
 
 nexts.forEach((next, index) => {
     const eventItem = eventLists[index].querySelectorAll('img').length;
-    if (eventItem < 3) {
+    if (eventItem < 2) {
         next.style.display = 'none';
     }
     let counter = 0;
     next.addEventListener('click', () => {
         counter++;
-        if (eventItem - (1 + counter) > 0) {
+        if (eventItem - (counter) > 0) {
             eventLists[index].style.transform = `translateX(-${counter * 300}px)`;
         } else {
             eventLists[index].style.transform = `translateX(0)`;
