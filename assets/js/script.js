@@ -21,3 +21,24 @@ document.querySelectorAll('#nav-menu a').forEach(nav => nav.addEventListener('cl
     }
     navMenu.classList.remove('active');
 }));
+
+// Next Button
+const nexts = document.querySelectorAll('#next');
+const eventLists = document.querySelectorAll('.event-list');
+
+nexts.forEach((next, index) => {
+    const eventItem = eventLists[index].querySelectorAll('img').length;
+    if (eventItem < 3) {
+        next.style.display = 'none';
+    }
+    let counter = 0;
+    next.addEventListener('click', () => {
+        counter++;
+        if (eventItem - (1 + counter) > 0) {
+            eventLists[index].style.transform = `translateX(-${counter * 300}px)`;
+        } else {
+            eventLists[index].style.transform = `translateX(0)`;
+            counter = 0;
+        }
+    });
+});
