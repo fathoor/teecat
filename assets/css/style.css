@@ -17,6 +17,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +52,10 @@ div {
 
 .justify-content-center {
     justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
 }
 
 /* Spacing */
@@ -143,6 +149,7 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar {
@@ -202,8 +209,9 @@ main {
     color: var(--purple);
 }
 
-/* My Tickets */
+/* Event */
 .event-wrapper {
+    position: relative;
     overflow: clip;
     overflow-clip-margin: 2rem;
 }
@@ -220,13 +228,26 @@ main {
 }
 
 .event:hover > .event-img {
-    scale: 1.05;
+    scale: 1.1;
     cursor: pointer;
 }
 
 .event {
     position: relative;
     padding-right: 2rem;
+}
+
+.event-list {
+    transition: all 1s ease-in-out;
+}
+
+#next {
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -243,5 +264,45 @@ main {
 
     .event:hover > .event-img {
         filter: brightness(0.5);
+    }
+}
+
+/* Profile */
+.profile-wrapper {
+    justify-content: space-between;
+}
+
+#profile {
+    padding-right: 0;
+}
+
+.profile{
+    width: 270px;
+    height: 320px;
+}
+
+#profile-icon-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-wrapper {
+        flex-direction: column;
+    }
+
+    .event#profile {
+        position: absolute;
+    }
+
+    #profile-icon {
+        display: none;
+    }
+
+    #profile-icon-mobile {
+        display: block;
+    }
+
+    .justify-content-end {
+        justify-content: start;
     }
 }
