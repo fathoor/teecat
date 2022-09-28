@@ -11,125 +11,34 @@
     <header class="d-flex align-items-center justify-content-center shadow">
         <nav class="d-flex flex-row align-items-center navbar my-1 px-1">
             <div class="d-flex flex-row align-items-center justify-content-center">
-                <span class="fs-1 px-1"><i class="bi bi-ticket-perforated-fill"></i></span>
-                <span class="fs-2 fw-semibold">Teecat</span>
+                <a href="#home" class="d-flex flex-row align-items-center justify-content-center">
+                    <span class="fs-1 px-1"><i class="bi bi-ticket-perforated-fill"></i></span>
+                    <span class="fs-2 fw-semibold">Teecat</span>
+                </a>
             </div>
             <button class="hamburger fs-2 px-1">
                 <i class="bi bi-list"></i>
             </button>
             <div id="nav-menu" class="d-flex flex-row align-items-center justify-content-center">
                 <span class="px-1"><a href="#home">Home</a></span>
+                <span class="px-1"><a href="#ticket">Ticket</a></span>
+                <span class="px-1"><a href="#event">Event</a></span>
+                <span class="px-1"><a href="#history">History</a></span>
                 <span class="fs-2 px-1"><a href="#account"><i class="bi bi-person-circle"></i></a></span>
             </div>
         </nav>
     </header>
-    <main class="d-flex flex-column px-2">
-        <div>
-            <article id="home" class="d-flex my-2">
-                <span class="fs-1 fw-semibold">Welcome, <span id="name">Fathoor</span>!</span>
-            </article>
-        </div>
-        <div class="flex-column">
-            <article class="d-flex mb-2 align-items-center">
-                <span class="fs-1"><i class="bi bi-ticket-perforated-fill"></i></span>
-                <span class="fs-2 fw-medium px-1">My Tickets</span>
-            </article>
-            <div class="event-wrapper">
-                <div class="event-list">
-                    <div class="event flex-column">
-                        <img class="event-img" src="assets/img/wtf2022.jpg" alt="">
-                        <div class="event-desc flex-column px-1">
-                            <span class="fw-medium pt-0">We The Fest 2022</span>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">Jakarta International Expo, Jakarta</span>
-                            </div>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">25 September 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event flex-column">
-                        <img class="event-img" src="assets/img/coldplay2022.jpg" alt="">
-                        <div class="event-desc flex-column px-1">
-                            <span class="fw-medium pt-0">Coldplay World Tour 2022</span>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">Jakarta International Stadium, Jakarta</span>
-                            </div>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">21 October 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event flex-column">
-                        <img class="event-img" src="assets/img/coldplay2022.jpg" alt="">
-                        <div class="event-desc flex-column px-1">
-                            <span class="fw-medium pt-0">Coldplay World Tour 2022</span>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">Jakarta International Stadium, Jakarta</span>
-                            </div>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">21 October 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span id="next">
-                    <i class="bi bi-chevron-compact-right"></i>
-                </span>
+    <main>
+        <div class="d-flex flex-column px-2">
+            <div>
+                <article id="home" class="d-flex my-2">
+                    <span class="fs-1 fw-semibold">Welcome, <span id="name">Fathoor</span>!</span>
+                </article>
             </div>
-        </div>
-        <div class="flex-column">
-            <article class="d-flex my-2 align-items-center">
-                <span class="fs-1"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                <span class="fs-2 fw-medium px-1">Upcoming Events</span>
-            </article>
-            <div class="event-wrapper">
-                <div class="event-list">
-                    <div class="event flex-column">
-                        <img class="event-img" src="assets/img/wtf2022.jpg" alt="">
-                        <div class="event-desc flex-column px-1">
-                            <span class="fw-medium pt-0">We The Fest 2022</span>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">Jakarta International Expo, Jakarta</span>
-                            </div>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">25 September 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event flex-column">
-                        <img class="event-img" src="assets/img/coldplay2022.jpg" alt="">
-                        <div class="event-desc flex-column px-1">
-                            <span class="fw-medium pt-0">Coldplay World Tour 2022</span>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">Jakarta International Stadium, Jakarta</span>
-                            </div>
-                            <div class="align-items-center">
-                                <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                                <span class="fs-3 fw-light pt-0">21 October 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span id="next">
-                    <i class="bi bi-chevron-compact-right"></i>
-                </span>
-            </div>
-        </div>
-        <div class="flex-row profile-wrapper">
             <div class="flex-column">
-                <article class="d-flex my-2 align-items-center">
-                    <span class="fs-1"><i class="bi bi-hourglass-split"></i></span>
-                    <span class="fs-2 fw-medium px-1">Recent Events</span>
+                <article id="ticket" class="d-flex mb-2 align-items-center">
+                    <span class="fs-1"><i class="bi bi-ticket-perforated-fill"></i></span>
+                    <span class="fs-2 fw-medium px-1">My Tickets</span>
                 </article>
                 <div class="event-wrapper">
                     <div class="event-list">
@@ -147,33 +56,134 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="event flex-column">
+                            <img class="event-img" src="assets/img/coldplay2022.jpg" alt="">
+                            <div class="event-desc flex-column px-1">
+                                <span class="fw-medium pt-0">Coldplay World Tour 2022</span>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">Jakarta International Stadium, Jakarta</span>
+                                </div>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">21 October 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event flex-column">
+                            <img class="event-img" src="assets/img/coldplay2022.jpg" alt="">
+                            <div class="event-desc flex-column px-1">
+                                <span class="fw-medium pt-0">Coldplay World Tour 2022</span>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">Jakarta International Stadium, Jakarta</span>
+                                </div>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">21 October 2022</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <span id="next">
+                        <i class="bi bi-chevron-compact-right"></i>
+                    </span>
                 </div>
             </div>
-            <aside>
-                <article id="account" class="d-flex my-2 align-items-center justify-content-end">
-                    <span id="profile-icon-mobile" class="fs-1"><i class="bi bi-person-circle"></i></span>
-                    <span class="fs-2 fw-medium px-1">Account</span>
-                    <span id="profile-icon" class="fs-1"><i class="bi bi-person-circle"></i></span>
+            <div class="flex-column">
+                <article id="event" class="d-flex my-2 align-items-center">
+                    <span class="fs-1"><i class="bi bi-calendar-event-fill pe-0"></i></span>
+                    <span class="fs-2 fw-medium px-1">Upcoming Events</span>
                 </article>
-                <div id="profile" class="event flex-column">
-                    <img class="event-img profile" src="assets/img/profile.jpg" alt="">
-                    <div class="event-desc flex-column px-1">
-                        <span class="fw-medium pt-0">We The Fest 2022</span>
-                        <div class="align-items-center">
-                            <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
-                            <span class="fs-3 fw-light pt-0">Jakarta International Expo, Jakarta</span>
+                <div class="event-wrapper">
+                    <div class="event-list">
+                        <div class="event flex-column">
+                            <img class="event-img" src="assets/img/wtf2022.jpg" alt="">
+                            <div class="event-desc flex-column px-1">
+                                <span class="fw-medium pt-0">We The Fest 2022</span>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">Jakarta International Expo, Jakarta</span>
+                                </div>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">25 September 2022</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="align-items-center">
-                            <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
-                            <span class="fs-3 fw-light pt-0">25 September 2022</span>
+                        <div class="event flex-column">
+                            <img class="event-img" src="assets/img/coldplay2022.jpg" alt="">
+                            <div class="event-desc flex-column px-1">
+                                <span class="fw-medium pt-0">Coldplay World Tour 2022</span>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">Jakarta International Stadium, Jakarta</span>
+                                </div>
+                                <div class="align-items-center">
+                                    <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
+                                    <span class="fs-3 fw-light pt-0">21 October 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="next">
+                        <i class="bi bi-chevron-compact-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="flex-row profile-wrapper">
+                <div class="flex-column">
+                    <article id="history" class="d-flex my-2 align-items-center">
+                        <span class="fs-1"><i class="bi bi-hourglass-split"></i></span>
+                        <span class="fs-2 fw-medium px-1">Recent Events</span>
+                    </article>
+                    <div class="event-wrapper">
+                        <div class="event-list">
+                            <div class="event flex-column">
+                                <img class="event-img" src="assets/img/wtf2022.jpg" alt="">
+                                <div class="event-desc flex-column px-1">
+                                    <span class="fw-medium pt-0">We The Fest 2022</span>
+                                    <div class="align-items-center">
+                                        <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-geo-fill pe-0"></i></span>
+                                        <span class="fs-3 fw-light pt-0">Jakarta International Expo, Jakarta</span>
+                                    </div>
+                                    <div class="align-items-center">
+                                        <span class="fs-3 fw-light pt-0 accent"><i class="bi bi-calendar-event-fill pe-0"></i></span>
+                                        <span class="fs-3 fw-light pt-0">25 September 2022</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </aside>
+                <aside class="mb-2">
+                    <article id="account" class="d-flex my-2 align-items-center justify-content-end">
+                        <span id="profile-icon-mobile" class="fs-1"><i class="bi bi-person-circle"></i></span>
+                        <span class="fs-2 fw-medium px-1">Account</span>
+                        <span id="profile-icon" class="fs-1"><i class="bi bi-person-circle"></i></span>
+                    </article>
+                    <div id="profile" class="event flex-column">
+                        <img class="event-img profile" src="assets/img/profile.jpg" alt="">
+                        <div id="profile-desc" class="event-desc flex-column px-1 align-items-center">
+                            <span class="fw-bold pt-0">Muhammad Fathurrahman</span>
+                            <div class="align-items-center">
+                                <span class="fs-3 fw-medium pt-0">Full Stack Developer</span>
+                            </div>
+                            <div class="align-items-center">
+                                <span class="fs-3 fw-light pt-0">Lintasarta Cloudeka Digischool 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer flex-column justify-content-center align-items-center my-2 fw-light">
+            <span>&copy; 2022</span>
+            <span>Lintasarta Cloudeka Digischool</span>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
