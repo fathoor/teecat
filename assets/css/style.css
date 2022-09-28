@@ -22,6 +22,7 @@
 }
 
 body {
+    position: relative;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -203,10 +204,20 @@ main {
 #name {
     color: var(--accent);
     cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 #name:hover {
-    color: var(--purple);
+    animation: name-color 1s ease-in-out infinite;
+}
+
+@keyframes name-color {
+    0% {
+        color: var(--accent);
+    }
+    50% {
+        color: var(--purple);
+    }
 }
 
 /* Event */
@@ -258,6 +269,10 @@ main {
         transition: all 0.5s ease-in-out;
     }
 
+    .event-desc#profile-desc {
+        left: 1rem;
+    }
+
     .event:hover > .event-desc {
         opacity: 1;
     }
@@ -270,6 +285,7 @@ main {
 /* Profile */
 .profile-wrapper {
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 #profile {
@@ -288,10 +304,16 @@ main {
 @media screen and (max-width: 768px) {
     .profile-wrapper {
         flex-direction: column;
+        margin-bottom: 30rem;
     }
 
     .event#profile {
         position: absolute;
+    }
+
+    .event-desc#profile-desc {
+        left: 1rem;
+        margin-bottom: 2rem;
     }
 
     #profile-icon {
@@ -305,4 +327,12 @@ main {
     .justify-content-end {
         justify-content: start;
     }
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
